@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-
+import { Heading } from '@chakra-ui/react'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -16,7 +15,8 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <h1>hello world</h1> 
+          <Heading as='h4' size='lg'  fontSize='40px' noOfLines={4} >hello world</Heading> 
+          <Heading as='h1' variant="solid" size='xl'  fontSize='50px' noOfLines={4} >hello world</Heading> 
         </div>
       </main>
     </>
